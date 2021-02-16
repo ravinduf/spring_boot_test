@@ -2,6 +2,7 @@ package com.senal.test.dao;
 
 import com.senal.test.model.Person;
 
+import java.util.List;
 import java.util.UUID;
 
 public interface PersonDao {
@@ -13,4 +14,5 @@ public interface PersonDao {
         return insertPerson(id, person);
     }
 
+    List<Person> selectAllPeople();
 }
